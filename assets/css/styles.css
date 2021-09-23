@@ -1,0 +1,455 @@
+/* Utils */
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+
+  --primary-color: #da3d77;
+  --secondary-color: #3074b3;
+  --tertiary-color: #fcb040;
+  --content-color: #000;
+  --inverted-color: #fff;
+
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Ubuntu", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+section {
+  position: relative;
+}
+
+/* Generals */
+
+button:hover {
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  height: 100%;
+}
+
+.primary-button {
+  display: block;
+  padding: 15px 30px;
+
+  color: var(--inverted-color);
+  background: var(--primary-color);
+
+  border-radius: 10px;
+}
+
+.strong {
+  font-weight: bold;
+}
+/* Header */
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+
+  margin: 30px auto;
+
+  width: 100%;
+
+  z-index: 10;
+}
+
+.menu-logo-link {
+  margin-right: 60px;
+}
+
+.menu nav ul {
+  display: flex;
+}
+
+.menu nav ul li a {
+  text-decoration: none;
+  color: var(--inverted-color);
+
+  padding: 20px;
+  display: block;
+}
+
+.menu button {
+  display: block;
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  margin: 15px;
+
+  background: #da3d77;
+  color: var(--inverted-color);
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* First Banner */
+
+.banner {
+  background: url(../imgs/first-banner.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 95vh;
+
+  color: var(--inverted-color);
+}
+
+.banner .container div:first-child {
+  flex: 1;
+}
+
+.banner .container div:last-child {
+  flex: 1;
+}
+
+.banner-logo img {
+  margin: 0 auto;
+}
+
+.banner .stores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .stores img {
+  margin: 20px;
+}
+
+.banner-cta {
+  margin-left: 100px;
+}
+
+.banner-cta h1 {
+  font-size: 3.625em;
+
+  display: block;
+
+  font-family: var(--primary-font);
+
+  font-weight: 100;
+
+  text-transform: uppercase;
+}
+
+.banner-cta h1::after {
+  content: "";
+  display: block;
+  width: 91px;
+  height: 5px;
+  background: var(--primary-color);
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.banner-cta h1 strong {
+  font-weight: 500;
+}
+
+.banner-cta p {
+  max-width: 300px;
+  line-height: 1.25em;
+}
+
+.first-banner-button {
+  background: var(--tertiary-color);
+
+  font-size: 1.625em;
+
+  display: block;
+  padding: 10px 30px;
+  margin: 40px 0 20px 0;
+
+  border-radius: 10px;
+
+  font-style: italic;
+
+  color: var(--inverted-color);
+}
+
+/* How Works */
+
+.how-works .container {
+  align-items: flex-start;
+  margin-top: -50px;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+
+  align-items: center;
+}
+
+.articles h3 {
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.articles p {
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 20px;
+}
+
+.how-works h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+/* Apps-on-Hands */
+
+.app-on-hands {
+  background: url(../imgs/app-on-hands.jpg) no-repeat center;
+  background-size: cover;
+  height: 460px;
+
+  color: var(--inverted-color);
+
+  overflow-y: hidden;
+}
+
+.app-on-iphone {
+  position: absolute;
+  top: -10px;
+
+  display: block;
+  width: 650px;
+  height: 300px;
+}
+
+.app-on-hands .container div {
+  flex: 1;
+}
+
+.apps-apps-on-hands {
+  height: 80%;
+
+  margin-top: 50px;
+  margin-left: -100px;
+
+  z-index: 2;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.apps-apps-on-hands img {
+  margin: 10px 20px;
+}
+
+.app-on-hands-cta {
+  z-index: 2;
+  max-width: 600px;
+
+  margin-right: 70px;
+}
+
+.app-on-hands-cta h2 {
+  font-size: 1.625em;
+}
+
+.app-on-hands-cta h2:first-child {
+  font-style: italic;
+}
+
+.app-on-hands-cta-paragraph {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.app-on-hands-cta button {
+  padding: 15px 18px;
+  margin-top: 40px;
+  background: var(--inverted-color);
+
+  border-radius: 10px;
+
+  font-style: italic;
+}
+
+/* News Section */
+
+.news-section {
+  height: 470px;
+}
+
+.news-section .container div:first-child {
+  align-self: flex-start;
+  flex: 1;
+}
+
+.news-section .container div:last-child {
+  flex: 2;
+}
+
+.articles-container {
+  display: flex;
+}
+
+.news-title {
+  font-size: 2.125em;
+  font-style: italic;
+  text-align: center;
+  padding-right: 60px;
+  margin-top: 40px;
+}
+
+.news-article {
+  width: 330px;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.news-article p {
+  font-weight: 300;
+}
+
+.news-article h2 {
+  font-size: 1.8em;
+}
+
+.news-article a {
+  display: inline-block;
+
+  background: var(--primary-color);
+  color: var(--inverted-color);
+  border-radius: 10px;
+
+  padding: 5px 20px;
+  margin-top: 20px;
+}
+
+/* Prefeituras */
+
+.prefeituras-section {
+  background: url(../imgs/pref-bg.jpg) no-repeat center;
+  background-size: cover;
+
+  height: 545px;
+  color: var(--inverted-color);
+}
+
+.prefeituras-section div:first-child {
+  flex: 2;
+}
+.prefeituras-section div:last-child {
+  flex: 1;
+}
+
+.title-section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 400%;
+}
+
+.section-title {
+  margin-top: -60px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  margin-top: 10px;
+  background: var(--primary-color);
+  width: 660px;
+  height: 5px;
+  position: absolute;
+  left: -20px;
+  max-width: calc(100% + 150px);
+}
+
+.section-title p {
+  font-size: 1.75em;
+  font-style: italic;
+  text-align: right;
+
+  max-width: 350px;
+}
+
+.section-title h1 {
+  font-size: 3.8em;
+  font-style: italic;
+  text-align: right;
+  font-weight: bold;
+
+  max-width: 350px;
+}
+
+.pref-cta p {
+  font-size: 1.375em;
+  font-style: italic;
+
+  margin-bottom: 100px;
+}
+
+.pref-cta a {
+  display: inline-block;
+
+  text-decoration: none;
+
+  font-size: 1em;
+  font-style: italic;
+
+  background: var(--inverted-color);
+  color: var(--content-color);
+
+  padding: 15px 30px;
+
+  border-radius: 10px;
+}

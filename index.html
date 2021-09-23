@@ -5,57 +5,93 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;600;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
   <title>Destinos Inteligentes</title>
 </head>
 
 <body>
-  <header>
-    <a>
-      <img src="./assets/imgs/logo-menu.svg" alt="Logo" />
-    </a>
-    <nav>
-      <ul>
-        <li>Como Funciona</li>
-        <li>Prefeituras</li>
-        <li>Trade</li>
-        <li>Turista</li>
-        <li>Contato</li>
-      </ul>
-    </nav>
-    <button>Entrar</button>
+  <header class="menu">
+    <div class="container">
+      <a class="menu-logo-link">
+        <img src="./assets/imgs/logo-menu.svg" alt="Logo" />
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">
+              Como Funciona
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Prefeituras
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Trade
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Turista
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Contato
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button>Entrar</button>
+    </div>
   </header>
 
   <main>
-    <section>
-      <div>
-        <div>
-          <img src="./assets/imgs/greater-logo.png" alt="Logo" />
+    <section class="banner">
+      <div class="container">
+        <div class="banner-logo">
+          <div>
+            <img src="./assets/imgs/greater-logo.png" alt="Logo" />
+          </div>
+          <div class="stores">
+            <a href="#" target="_blank">
+              <img src="./assets/imgs/play-store.png" alt="Google Play" />
+            </a>
+            <a href="#" target="_blank">
+              <img src="./assets/imgs/app-store.png" alt="App Store" />
+            </a>
+          </div>
         </div>
-        <div>
-          <img src="./assets/imgs/play-store.png" alt="Google Play" />
-          <img src="./assets/imgs/app-store.png" alt="App Store" />
-        </div>
-      </div>
 
-      <div>
-        <div>
-          <h1>
-            <strong>Explore</strong><br />
-            Descubra<br />
-            <strong>VIVENCIE</strong>
-          </h1>
+        <div class="banner-cta">
+          <div>
+            <h1>
+              <strong>Explore</strong><br />
+              Descubra<br />
+              <strong>VIVENCIE</strong>
+            </h1>
+          </div>
+          <p>
+            Conheça o <strong>sistema de gestão de informação turísticas</strong> que integra tecnologia e comunicação aproximando as <strong>pessoas</strong> de <strong>seus sonhos.</strong>
+          </p>
+          <button class="first-banner-button">Assista o <span class="strong">vídeo</span></button>
         </div>
-        <p>
-          Conheça o <strong>sistema de gestão de informação turísticas</strong> que integra tecnologia e comunicação aproximando as <strong>pessoas</strong> de <strong>seus sonhos.</strong>
-        </p>
-        <button>Assista o <span>vídeo</span></button>
       </div>
 
     </section>
 
-    <section>
-      <div>
-        <article>
+    <section class="how-works">
+      <div class="container">
+        <article class="articles">
           <div>
             <img src="./assets/imgs/info-article.png" alt="Informações turísticas" />
           </div>
@@ -68,7 +104,7 @@
           </p>
         </article>
 
-        <article>
+        <article class="articles">
           <div>
             <img src="./assets/imgs/pattern-article.png" alt="Padronização e digitalização" />
           </div>
@@ -81,20 +117,20 @@
           </p>
         </article>
 
-        <article>
+        <article class="articles">
           <div>
             <img src="./assets/imgs/disruptive-article.png" alt="Disruptura e escala" />
           </div>
 
           <h3>
-            Disruptura e escala
+            Disruptura <br />e escala
           </h3>
           <p>
             Transforme cada ponto de acesso à internet em um verdadeiro <span>PIT</span>.
           </p>
         </article>
 
-        <article>
+        <article class="articles">
           <div>
             <img src="./assets/imgs/platform-article.png" alt="Plataforma multi-línguas" />
           </div>
@@ -107,88 +143,109 @@
           </p>
         </article>
 
-        <h1>Já imaginou onde podemos chegar?</h1>
 
       </div>
+      <h1>Já imaginou onde podemos chegar?</h1>
     </section>
 
-    <section>
-
-      <div>
+    <section class="app-on-hands">
+      <div class="app-on-iphone">
         <img src="./assets/imgs/app-on-hand.png" alt="App rodando no celular" />
       </div>
-      <div>
-        <img src="./assets/imgs/app-store.png" alt="App Store" />
-        <img src="./assets/imgs/play-store.png" alt="Google Play" />
-      </div>
+      <div class="container">
+        <div class="apps-apps-on-hands">
+          <a href="#">
+            <img src="./assets/imgs/app-store.png" alt="App Store" />
+          </a>
+          <a href="#">
+            <img src="./assets/imgs/play-store.png" alt="Google Play" />
+          </a>
+        </div>
 
-      <div>
-        <h2>Destinos Inteligentes é um sistema de gestão de informações turísticas e eventos.</h2>
+        <div class="app-on-hands-cta">
+          <h2>Destinos Inteligentes é um sistema de gestão de informações turísticas e eventos.</h2>
 
-        <p>
-          Consolidamos dados turísticos para oferecer informação de qualidade para as pessoas e para os gestores públicos. Fazendo isso, juntos, construiremos o maior portal de informações turísticas do mundo.
-        </p>
+          <p class="app-on-hands-cta-paragraph">
+            Consolidamos dados turísticos para oferecer informação de qualidade para as pessoas e para os gestores públicos. Fazendo isso, juntos, construiremos o maior portal de informações turísticas do mundo.
+          </p>
 
-        <p>
-          Nos concentrados em:
-        </p>
-        <h2>
-          Estâncias turísticas, MITs,
-          municípios, regiões e estados.
-        </h2>
+          <p>
+            Nos concentrados em:
+          </p>
+          <h2>
+            Estâncias turísticas, MITs,
+            municípios, regiões e estados.
+          </h2>
 
-        <button>Quero uma <span>proposta</span></button>
+          <button>Quero uma <span class="strong">proposta</span></button>
+        </div>
+
       </div>
 
     </section>
 
-    <section>
-      <div>
-        <h1>news_</h1>
-      </div>
-      <div>
-        <article>
-          <p>04 de outubro 2020</p>
-          <h2>Chegamos em Brotas.</h2>
-          <button>veja mais >></button>
-        </article>
+    <section class="news-section">
+      <div class="container">
+        <div class="news-title">
+          <h1>news_</h1>
+        </div>
+        <div class="articles-container">
+          <div class="article-sub-container">
 
-        <article>
-          <p>10 de setembro 2020</p>
-          <h2>Barcelona estuda parceria com DI</h2>
-          <button>veja mais >></button>
-        </article>
+            <article class="news-article">
+              <p>04 de outubro 2020</p>
+              <h2>Chegamos em Brotas.</h2>
+              <a href="#" target="_blank">veja mais >></a>
+            </article>
 
-        <article>
-          <p>13 de julho 2020</p>
-          <h2>Chegamos em Ibitinga</h2>
-          <button>veja mais >></button>
-        </article>
+            <article class="news-article">
+              <p>10 de setembro 2020</p>
+              <h2>Barcelona estuda parceria com DI</h2>
+              <a href="#" target="_blank">veja mais >></a>
+            </article>
+          </div>
 
-        <article>
-          <p>23 de novembro 2020</p>
-          <h2>DI negocia com estado de São Paulo</h2>
-          <button>veja mais >></button>
-        </article>
+          <div class="article-sub-container">
+
+            <article class="news-article">
+              <p>13 de julho 2020</p>
+              <h2>Chegamos em Ibitinga</h2>
+              <a href="#" target="_blank">veja mais >></a>
+            </article>
+
+            <article class="news-article">
+              <p>23 de novembro 2020</p>
+              <h2>DI negocia com estado de São Paulo</h2>
+              <a href="#" target="_blank">veja mais >></a>
+            </article>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <section>
-      <div>
-        <img src="./assets/imgs/greater-logo.png" alt="Logo" />
-        <div>
-          <h3>Porque é bom para</h3>
-          <h1>prefeituras</h1>
+    <section class="prefeituras-section">
+      <div class="container">
+        <div class="title-section-container">
+
+          <img src="./assets/imgs/greater-logo.png" alt="Logo" />
+
+          <div class="section-title">
+            <p>Porque é bom para</p>
+            <h1>prefeituras</h1>
+          </div>
+        </div>
+
+
+        <div class="pref-cta">
+          <p>
+            <span class="strong">Cadastre e atualize atrativos, monitore acessos e estimule o turismo</span> da sua região através de um sistema de gestão fácil e intuitivo.
+          </p>
+
+          <a href="#" class="button-section-pref">Fale com um <span class="strong">consultor</span></a>
         </div>
       </div>
 
-      <div>
-        <p>
-          Cadastre e atualize atrativos, monitore acessos e estimule o turismo da sua região através de um sistema de gestão fácil e intuitivo.
-        </p>
-
-        <button>Fale com um <span>consultor</span></button>
-      </div>
     </section>
 
     <section>
@@ -481,10 +538,10 @@
         <p>Acompanhe nossas redes socias.</p>
         <div>
           <ul>
-            <li><a href="./assets/imgs/instagram.svg"><img src="#" alt="Instagram"></a></li>
-            <li><a href="./assets/imgs/facebook.svg"><img src="#" alt="Facebook"></a></li>
-            <li><a href="./assets/imgs/youtube.svg"><img src="#" alt="Youtube"></a></li>
-            <li><a href="./assets/imgs/linkedin.svg"><img src="#" alt="LinkedIn"></a></li>
+            <li><a href="#"><img src="./assets/imgs/instagram.svg" alt="Instagram"></a></li>
+            <li><a href="#"><img src="./assets/imgs/facebook.svg" alt="Facebook"></a></li>
+            <li><a href="#"><img src="./assets/imgs/youtube.svg" alt="Youtube"></a></li>
+            <li><a href="#"><img src="./assets/imgs/linkedin.svg" alt="LinkedIn"></a></li>
           </ul>
         </div>
       </div>
@@ -505,12 +562,10 @@
 
     <div>
       <ul>
-        <li><a href="./assets/imgs/play-store.png"><img src="#" alt="Google Play"></a></li>
-        <li><a href="./assets/imgs/app-store.png"><img src="#" alt="App Store"></a></li>
+        <li><a href="#"><img src="./assets/imgs/play-store.png" alt="Google Play"></a></li>
+        <li><a href="#"><img src="./assets/imgs/app-store.png" alt="App Store"></a></li>
       </ul>
     </div>
   </footer>
 
 </body>
-
-</html>
