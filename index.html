@@ -33,13 +33,13 @@
 <body>
   <header class="menu">
     <div class="container">
-      <a href="#" class="menu-logo-link">
+      <a href="#home" class="menu-logo-link">
 
       </a>
       <nav>
         <ul>
           <li>
-            <a href="#how-works">
+            <a class="active" href="#how-works">
               Como Funciona
             </a>
           </li>
@@ -59,18 +59,18 @@
             </a>
           </li>
           <li>
-            <a href="#newsletter">
+            <a class="call-to-contact">
               Contato
             </a>
           </li>
         </ul>
       </nav>
-      <button>Entrar</button>
+      <a class="button" href="https://portal.destinosinteligentes.tur.br/login" target="_blank">Entrar</a>
     </div>
   </header>
 
   <main>
-    <section class="banner">
+    <section data-anime="scroll" id="home" class="banner">
       <div class="container">
         <div class="banner-logo">
           <div>
@@ -103,7 +103,7 @@
 
     </section>
 
-    <section id="how-works" class="how-works">
+    <section data-menu="how-works" id="how-works" class="how-works">
       <div class="container">
         <article class="articles">
           <div>
@@ -162,11 +162,14 @@
       <h1>Já imaginou onde podemos chegar?</h1>
     </section>
 
-    <section class="app-on-hands">
-      <div class="app-on-iphone">
-        <img src="./assets/imgs/app-on-hand.png" alt="App rodando no celular" />
-      </div>
+    <section data-anime="scroll" class="app-on-hands">
+
       <div class="container">
+
+        <div class="app-on-iphone">
+          <img src="./assets/imgs/app-on-hand.png" alt="App rodando no celular" />
+        </div>
+
         <div class="apps-apps-on-hands">
           <a href="#">
             <img src="./assets/imgs/app-store.png" alt="App Store" />
@@ -198,7 +201,7 @@
 
     </section>
 
-    <section class="news-section">
+    <section data-anime="scroll" class="news-section">
       <div class="container">
         <div class="news-title">
           <h1>news_</h1>
@@ -238,7 +241,7 @@
       </div>
     </section>
 
-    <section id="city-halls" class="prefeituras-section">
+    <section data-anime="scroll" id="city-halls" class="prefeituras-section">
       <div class="more-lang-icon">
         <img src="./assets/imgs/more-languages.png" alt="Em várias Linguas">
       </div>
@@ -266,7 +269,7 @@
     </section>
 
 
-    <section class="pref-feats">
+    <section data-anime="scroll" class="pref-feats">
       <div class="container">
         <article class="articles">
           <div>
@@ -388,7 +391,7 @@
 
     </section>
 
-    <section id="trade" class="trade-section">
+    <section data-anime="scroll" data-anime="scroll" id="trade" class="trade-section">
       <div class="container">
         <div class="title-section-container">
 
@@ -413,7 +416,7 @@
     </section>
 
 
-    <section class="trade-partner">
+    <section data-anime="scroll" class="trade-partner">
       <div class="container">
         <div class="partner-subcontainer">
           <h2>Parceiro do trade</h2>
@@ -445,7 +448,7 @@
     </section>
 
 
-    <section id="tourist" class="resident-section">
+    <section data-anime="scroll" id="tourist" class="resident-section">
       <div class="container">
         <div class="title-section-container">
 
@@ -483,7 +486,7 @@
     </section>
 
 
-    <section class="resident-feats">
+    <section data-anime="scroll" class="resident-feats">
       <div class="container">
         <article class="articles">
           <div>
@@ -544,7 +547,7 @@
 
 
 
-    <section class="partners">
+    <section data-anime="scroll" class="partners">
       <div class="container">
         <h2>clientes</h2>
         <div class="partners-sub-container">
@@ -569,7 +572,7 @@
 
     </section>
 
-    <section class="partners-logo">
+    <section data-anime="scroll" class="partners-logo">
       <div class="container">
         <h2>parceiros</h2>
 
@@ -587,11 +590,11 @@
 
     <!-- Mosaico -->
 
-    <section class="partners-mosaic">
+    <section data-anime="scroll" class="partners-mosaic">
       <img src="./assets/imgs/mosaico.png" alt="Mosaico">
     </section>
 
-    <section class="app-numbers">
+    <section data-anime="scroll" class="app-numbers">
 
       <div class="container">
 
@@ -615,11 +618,9 @@
 
     </section>
 
-    <section id="newsletter" class="newsletter">
+    <section data-anime="scroll" id="newsletter" class="newsletter">
       <div class="container">
         <h1>Newsletter</h1>
-        <!-- Embbed de form -->
-        <!-- <iframe></iframe> -->
         <div class="newsletter-subcontainer">
 
           <form>
@@ -630,7 +631,7 @@
           <div class="social-media">
             <p>Acompanhe nossas<br /> <span class="strong">redes socias.</span></p>
             <ul class="social-media-links">
-              <li><a href="#"><img src="./assets/imgs/instagram.svg" alt="Instagram"></a></li>
+              <li><a href="https://www.instagram.com/destinosinteligentesoficial/" target="_blank"><img src="./assets/imgs/instagram.svg" alt="Instagram"></a></li>
               <li><a href="#"><img src="./assets/imgs/facebook.svg" alt="Facebook"></a></li>
               <li><a href="#" style="height: 55px; width: 55px;"><img src="./assets/imgs/youtube.svg" alt="Youtube"></a></li>
               <li><a href="#"><img src="./assets/imgs/linkedin.svg" alt="LinkedIn"></a></li>
@@ -666,6 +667,16 @@
     </div>
 
   </footer>
+
+  <div class="contact-modal">
+    <div class="modal-content">
+
+
+      <iframe src="https://forms.monday.com/forms/embed/cfc7587878bb031cf1df56e0f5f09f11?r=use1" width="650" height="600" style="border: 0; box-shadow: 5px 5px 56px 0px rgba(0,0,0,0.25);"></iframe>
+
+    </div>
+
+  </div>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="./assets/js/scripts.js"></script>
