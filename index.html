@@ -27,34 +27,37 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+
   <title>Destinos Inteligentes</title>
 </head>
 
 <body>
   <header class="menu">
     <div class="container">
-      <a href="#home" class="menu-logo-link">
+      <a data-section="home" href="#home" class="menu-logo-link">
 
       </a>
       <nav>
         <ul>
           <li>
-            <a class="active" href="#how-works">
+            <a data-section="how-works" data-menu="how-works" class="selected" href="#how-works">
               Como Funciona
             </a>
           </li>
           <li>
-            <a href="#city-halls">
+            <a data-section="city-halls" data-menu="city-halls" href="#city-halls">
               Prefeituras
             </a>
           </li>
           <li>
-            <a href="#trade">
+            <a data-section="trade" data-menu="trade" href="#trade">
               Trade
             </a>
           </li>
           <li>
-            <a href="#tourist">
+            <a data-section="tourist" data-menu="tourist" href="#tourist">
               Turista
             </a>
           </li>
@@ -69,8 +72,56 @@
     </div>
   </header>
 
+  <div class="mobile-wrapper">
+
+    <div class="mobile-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50" style=" fill:#da3d77;">
+        <path d="M 3 8 A 2.0002 2.0002 0 1 0 3 12 L 47 12 A 2.0002 2.0002 0 1 0 47 8 L 3 8 z M 3 23 A 2.0002 2.0002 0 1 0 3 27 L 47 27 A 2.0002 2.0002 0 1 0 47 23 L 3 23 z M 3 38 A 2.0002 2.0002 0 1 0 3 42 L 47 42 A 2.0002 2.0002 0 1 0 47 38 L 3 38 z"></path>
+      </svg>
+    </div>
+
+
+    <header class="menu-mobile">
+      <div class="container">
+        <a data-section="home" href="#home" class="menu-logo-link">
+
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a data-section="how-works" data-menu="how-works" class="selected" href="#how-works">
+                Como Funciona
+              </a>
+            </li>
+            <li>
+              <a data-section="city-halls" data-menu="city-halls" href="#city-halls">
+                Prefeituras
+              </a>
+            </li>
+            <li>
+              <a data-section="trade" data-menu="trade" href="#trade">
+                Trade
+              </a>
+            </li>
+            <li>
+              <a data-section="tourist" data-menu="tourist" href="#tourist">
+                Turista
+              </a>
+            </li>
+            <li>
+              <a class="call-to-contact">
+                Contato
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a class="button" href="https://portal.destinosinteligentes.tur.br/login" target="_blank">Entrar</a>
+      </div>
+    </header>
+  </div>
+
   <main>
-    <section data-anime="scroll" id="home" class="banner">
+    <section data-section="home" data-anime="scroll" id="home" class="banner section">
       <div class="container">
         <div class="banner-logo">
           <div>
@@ -103,7 +154,7 @@
 
     </section>
 
-    <section data-menu="how-works" id="how-works" class="how-works">
+    <section data-section="how-works" id="how-works" class="how-works section">
       <div class="container">
         <article class="articles">
           <div>
@@ -212,13 +263,13 @@
             <article class="news-article">
               <p>04 de outubro 2020</p>
               <h2>Chegamos em Brotas.</h2>
-              <a href="#" target="_blank">veja mais >></a>
+              <a data-modal="brotas" id="brotas" href="#" target="_blank">veja mais >></a>
             </article>
 
             <article class="news-article">
               <p>10 de setembro 2020</p>
               <h2>Barcelona estuda parceria com DI</h2>
-              <a href="#" target="_blank">veja mais >></a>
+              <a data-modal="barcelona" id="barcelona" href="#" target="_blank">veja mais >></a>
             </article>
           </div>
 
@@ -227,13 +278,13 @@
             <article class="news-article">
               <p>13 de julho 2020</p>
               <h2>Chegamos em Ibitinga</h2>
-              <a href="#" target="_blank">veja mais >></a>
+              <a data-modal="ibitinga" id="ibitinga" href="#" target="_blank">veja mais >></a>
             </article>
 
             <article class="news-article">
               <p>23 de novembro 2020</p>
               <h2>DI negocia com estado de São Paulo</h2>
-              <a href="#" target="_blank">veja mais >></a>
+              <a data-modal="sao-paulo" id="sao-paulo" href="#" target="_blank">veja mais >></a>
             </article>
           </div>
         </div>
@@ -241,7 +292,7 @@
       </div>
     </section>
 
-    <section data-anime="scroll" id="city-halls" class="prefeituras-section">
+    <section data-section="city-halls" data-anime="scroll" id="city-halls" class="prefeituras-section section">
       <div class="more-lang-icon">
         <img src="./assets/imgs/more-languages.png" alt="Em várias Linguas">
       </div>
@@ -262,7 +313,7 @@
             <span class="strong">Cadastre e atualize atrativos, monitore acessos e estimule o turismo</span> da sua região através de um sistema de gestão fácil e intuitivo.
           </p>
 
-          <a href="#newsletter" class="button-section-pref">Fale com um <span class="strong">consultor</span></a>
+          <a href="" class="button-section-pref call-specialist">Fale com um <span class="strong">consultor</span></a>
         </div>
       </div>
 
@@ -386,12 +437,12 @@
       </ul>
 
       <div class="pref-container-cta">
-        <a href="#newsletter">Fale com um <span>consultor</span></a>
+        <a class="call-specialist" href="">Fale com um <span>consultor</span></a>
       </div>
 
     </section>
 
-    <section data-anime="scroll" data-anime="scroll" id="trade" class="trade-section">
+    <section data-section="trade" data-anime="scroll" id="trade" class="trade-section section">
       <div class="container">
         <div class="title-section-container">
 
@@ -409,7 +460,7 @@
             Transforma qualquer estabelecimento em um PIT, além de promover o comércio e serviços locais através do turismo.
           </p>
 
-          <a href="#newsletter" class="button-section-trade">Fale com um <span class="strong">consultor</span></a>
+          <a href="" class="button-section-trade call-specialist">Fale com um <span class="strong">consultor</span></a>
         </div>
       </div>
 
@@ -448,7 +499,7 @@
     </section>
 
 
-    <section data-anime="scroll" id="tourist" class="resident-section">
+    <section data-section="tourist" data-anime="scroll" id="tourist" class="resident-section section">
       <div class="container">
         <div class="title-section-container">
 
@@ -594,24 +645,24 @@
       <img src="./assets/imgs/mosaico.png" alt="Mosaico">
     </section>
 
-    <section data-anime="scroll" class="app-numbers">
+    <section data-section="anima-numeros" data-anime="scroll" class="app-numbers section" id="anima-numeros">
 
       <div class="container">
 
         <div class="number-growth">
-          <h1>6</h1>
+          <h1 class="counter-up" data-count-to="6">6</h1>
           <p>cidades</p>
         </div>
         <div class="number-growth">
-          <h1>6873</h1>
+          <h1 class="counter-up" data-count-to="6873">6873</h1>
           <p>mil acessos mês</p>
         </div>
         <div class="number-growth">
-          <h1>80</h1>
+          <h1 class="counter-up" data-count-to="80">80</h1>
           <p>colaboradores especializados</p>
         </div>
         <div class="number-growth">
-          <h1>3</h1>
+          <h1 class="counter-up" data-count-to="3">3</h1>
           <p>estados atendidos</p>
         </div>
       </div>
@@ -624,8 +675,8 @@
         <div class="newsletter-subcontainer">
 
           <form>
-            <input type="text" placeholder="Assine nossa NEWs e recebe informações atualizadas." />
-            <button class="assign">Assinar_</button>
+            <input type="text" disabled placeholder="Assine nossa NEWs e recebe informações atualizadas." />
+            <button disabled class="assign">Assinar_</button>
           </form>
 
           <div class="social-media">
@@ -633,7 +684,7 @@
             <ul class="social-media-links">
               <li><a href="https://www.instagram.com/destinosinteligentesoficial/" target="_blank"><img src="./assets/imgs/instagram.svg" alt="Instagram"></a></li>
               <li><a href="#"><img src="./assets/imgs/facebook.svg" alt="Facebook"></a></li>
-              <li><a href="#" style="height: 55px; width: 55px;"><img src="./assets/imgs/youtube.svg" alt="Youtube"></a></li>
+              <li><a href="#" style="height: 3.4em; width: 3.4em;"><img src="./assets/imgs/youtube.svg" alt="Youtube"></a></li>
               <li><a href="#"><img src="./assets/imgs/linkedin.svg" alt="LinkedIn"></a></li>
             </ul>
           </div>
@@ -669,14 +720,49 @@
   </footer>
 
   <div class="contact-modal">
+
+    <iframe src="https://forms.monday.com/forms/embed/cfc7587878bb031cf1df56e0f5f09f11?r=use1" width="650" height="600" style="border: 0; border-radius: 10px;box-shadow: 5px 5px 56px 0px rgba(0,0,0,0.25);"></iframe>
+
+  </div>
+
+
+  <div data-modal="brotas">
     <div class="modal-content">
 
-
-      <iframe src="https://forms.monday.com/forms/embed/cfc7587878bb031cf1df56e0f5f09f11?r=use1" width="650" height="600" style="border: 0; box-shadow: 5px 5px 56px 0px rgba(0,0,0,0.25);"></iframe>
+      <h1>Chegamos em Brotas.</h1>
 
     </div>
 
   </div>
+
+  <div data-modal="barcelona">
+    <div class="modal-content">
+
+      <h1>Barcelona estuda parceria com DI</h1>
+
+    </div>
+
+  </div>
+
+  <div data-modal="ibitinga">
+    <div class="modal-content">
+
+      <h1>Chegamos em Ibitinga</h1>
+
+    </div>
+
+  </div>
+
+  <div data-modal="sao-paulo">
+    <div class="modal-content">
+
+      <h1>DI negocia com estado de São Paulo</h1>
+
+    </div>
+
+  </div>
+
+
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="./assets/js/scripts.js"></script>

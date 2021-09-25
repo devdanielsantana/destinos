@@ -14,6 +14,7 @@ font-family: 'Ubuntu', sans-serif; */
 
 html,
 body {
+  width: 100%;
   height: 100%;
   -webkit-font-smoothing: antialiased;
 }
@@ -68,6 +69,8 @@ button:hover {
   display: flex;
   max-width: 1280px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
   align-items: center;
   height: 100%;
 }
@@ -139,15 +142,28 @@ button:hover {
   text-decoration: none;
   color: var(--inverted-color);
 
-  padding: 10px 20px 10px 20px;
+  padding: 20px 20px 10px 20px;
   display: block;
 
   white-space: nowrap;
 
   cursor: pointer;
+  transition: 0.3s;
 }
 
-.menu nav ul li a.active::after {
+.menu nav ul li a::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 2px;
+  background: none;
+
+  margin-top: 10px;
+
+  animation: menuBar 0.3s forwards;
+}
+
+.menu nav ul li a.selected::after {
   content: "";
   display: block;
   width: 70%;
@@ -155,6 +171,7 @@ button:hover {
   background: var(--primary-color);
 
   margin-top: 10px;
+  animation: menuBar 0.3s forwards;
 }
 
 .menu.scrolled nav ul li a {
@@ -274,6 +291,7 @@ button:hover {
   max-width: 300px;
 
   align-items: center;
+  flex: 1;
 }
 
 .articles h3 {
@@ -305,7 +323,7 @@ button:hover {
 .app-on-hands {
   background: url(../imgs/app-on-hands.jpg) no-repeat center;
   background-size: cover;
-  height: 460px;
+  height: 70vh;
 
   color: var(--inverted-color);
 
@@ -318,7 +336,7 @@ button:hover {
 
 .app-on-iphone {
   position: absolute;
-  top: -10px;
+  top: 130px;
   left: -50px;
 
   display: block;
@@ -410,9 +428,9 @@ button:hover {
 }
 
 .news-article {
-  width: 330px;
+  width: 300px;
   max-width: 100%;
-  padding: 20px;
+  padding: 10px;
 }
 
 .news-article p {
@@ -440,7 +458,7 @@ button:hover {
   background: url(../imgs/pref-bg.jpg) no-repeat center;
   background-size: cover;
 
-  height: 545px;
+  height: 70vh;
   color: var(--inverted-color);
 }
 
@@ -461,7 +479,7 @@ button:hover {
 
 .section-title {
   margin-top: -60px;
-  margin-right: 20px;
+  margin-right: 30px;
   position: relative;
 }
 
@@ -645,7 +663,7 @@ button:hover {
   background: url(../imgs/trade.jpg) no-repeat center;
   background-size: cover;
 
-  height: 545px;
+  height: 70vh;
   color: var(--inverted-color);
 }
 
@@ -779,7 +797,7 @@ button:hover {
   background: url(../imgs/resident.jpg) no-repeat center;
   background-size: cover;
 
-  height: 585px;
+  height: 70vh;
   color: var(--inverted-color);
 }
 
@@ -990,7 +1008,7 @@ button:hover {
 }
 
 .newsletter input {
-  width: 530px;
+  width: 400px;
   max-width: 100%;
   height: 45px;
 
@@ -1033,8 +1051,8 @@ button:hover {
 }
 
 .social-media-links a {
-  width: 40px;
-  height: 40px;
+  width: 2em;
+  height: 2em;
 
   display: inline-block;
 
@@ -1080,6 +1098,46 @@ footer .container div {
 
 .contact-modal {
   display: none;
+}
+
+[data-modal] {
+  display: none;
+}
+
+[data-modal].active {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  overflow: hidden;
+
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.modal-content {
+  background: var(--inverted-color);
+  position: relative;
+
+  width: 768px;
+  max-width: 100%;
+  height: 768px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  overflow-y: auto;
 }
 
 .contact-modal.active {
@@ -1133,5 +1191,16 @@ footer .container div {
   to {
     opacity: 0;
     transform: translateY(-40px);
+  }
+}
+
+@keyframes menuBar {
+  from {
+    opacity: 0;
+    transform: translatex(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(initial);
   }
 }

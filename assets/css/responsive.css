@@ -1,0 +1,504 @@
+@media (min-width: 768px) {
+  .menu-mobile {
+    display: none;
+  }
+
+  .mobile-icon {
+    display: none;
+  }
+
+  .mobile-wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* General */
+  body,
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    max-width: 960px;
+  }
+
+  .title-section-container img {
+    max-width: 150px;
+  }
+
+  .section-title h1 {
+    font-size: 3em;
+  }
+
+  /* Menu */
+
+  .menu-logo-link {
+    margin-right: 15px;
+  }
+
+  .menu nav ul li a {
+    padding: 20px 10px 10px 20px;
+  }
+
+  /* App On Iphone */
+
+  .app-on-iphone {
+    left: -160px;
+  }
+
+  .apps-apps-on-hands {
+    margin-left: 0;
+  }
+
+  /* News Article */
+  .news-article {
+    width: 280px;
+  }
+
+  .newsletter h1 {
+    margin-left: 0;
+  }
+
+  .newsletter input {
+    width: 300px;
+    max-width: 100%;
+  }
+
+  .assign {
+    width: 150px;
+  }
+
+  /* Prefeituras */
+
+  .pref-cta {
+    margin-right: 0;
+  }
+
+  /* Resident */
+
+  .resident-section .section-title h1 {
+    font-size: 3em;
+  }
+
+  .resident-cta {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  /* General */
+
+  body,
+  html {
+    font-size: 12px;
+
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-title::after {
+    width: 150%;
+    max-width: calc(100% + 50px);
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: none;
+    animation: animaMenuMobile 0.3s forwards;
+  }
+
+  .mobile-icon {
+    position: fixed;
+    top: 40px;
+    right: 30px;
+
+    background: rgba(255, 255, 255, 0.3);
+    padding: 5px;
+
+    border-radius: 10px;
+
+    z-index: 100;
+  }
+
+  .menu-mobile.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+
+    background: var(--inverted-color);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+  }
+
+  .menu-logo-link {
+    margin-right: 60px;
+    width: 133px;
+    height: 60px;
+
+    background: url(../imgs/footer-logo.png) no-repeat center;
+    background-size: cover;
+
+    margin: 40px auto;
+  }
+
+  .menu-mobile nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-mobile nav ul li a {
+    text-decoration: none;
+    color: var(--content-color);
+
+    font-size: 2em;
+
+    padding: 30px;
+    display: block;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .menu-mobile .button {
+    display: block;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    margin: 40px auto;
+
+    line-height: 45px;
+    text-align: center;
+
+    background: #da3d77;
+    color: var(--inverted-color);
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  /* banner */
+
+  .banner {
+    overflow-x: hidden;
+  }
+
+  .banner-logo img {
+    max-width: 250px;
+  }
+
+  .banner .container div:first-child {
+    flex: none;
+  }
+
+  .banner-cta {
+    margin-left: 0;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+  }
+
+  .banner-cta p {
+    max-width: 220px;
+  }
+
+  .banner-cta h1::after {
+    margin-bottom: 20px;
+  }
+
+  /* How Works */
+
+  .how-works .container {
+    align-items: center;
+  }
+
+  /* App on hands */
+
+  .app-on-hands {
+    background: url(../imgs/app-on-hands-mobile1.png) no-repeat center -10%;
+    background-size: cover;
+    height: 90vh;
+
+    overflow-x: hidden;
+  }
+
+  .app-on-iphone {
+    top: 295px;
+    left: -50px;
+  }
+
+  .app-on-hands .container {
+    flex-direction: column-reverse;
+  }
+
+  .app-on-hands-cta {
+    max-width: 600px;
+    margin-right: 0;
+    margin-top: 120px;
+  }
+
+  .app-on-hands-cta a {
+    display: block;
+    width: 170px;
+    padding: 15px 18px;
+    margin: 40px auto;
+    position: relative;
+    left: -50px;
+  }
+
+  .apps-apps-on-hands img {
+    margin: 30px 20px;
+  }
+
+  /* News */
+
+  .news-section {
+    margin-top: 30px;
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .news-section .container div {
+    flex-direction: column;
+  }
+
+  .news-section .container div:first-child {
+    align-self: center;
+  }
+
+  .news-article {
+    padding: 30px;
+  }
+
+  /* sections */
+
+  .title-section-container {
+    position: relative;
+    left: -20px !important;
+  }
+
+  .title-section-container img {
+    max-width: 150px;
+  }
+
+  /* Prefeituras */
+
+  .prefeituras-section .title-section-container {
+    left: 0 !important;
+  }
+
+  .prefeituras-section .section-title {
+    margin-top: 30px;
+  }
+
+  .prefeituras-section .section-title h1 {
+    font-size: 3.3em;
+  }
+
+  .prefeituras-section .title-section-container .section-title::after {
+    max-width: 100%;
+  }
+
+  .pref-cta {
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    flex-direction: column;
+  }
+
+  .pref-cta p {
+    margin-bottom: 50px;
+    position: relative;
+    right: -30px;
+  }
+
+  .pref-cta a {
+    text-align: center;
+  }
+
+  .pref-feats .container {
+    align-items: center;
+  }
+
+  .articles {
+    margin: 20px auto;
+  }
+
+  .articles:first-child {
+    margin: 0 auto;
+  }
+
+  /* Trade */
+
+  .trade-cta {
+    margin-right: 0;
+  }
+
+  .trade-partner {
+    height: 80vh;
+  }
+
+  .trade-partner .container {
+    padding-top: 80px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .partner-subcontainer:last-child {
+    padding-left: 10px;
+  }
+
+  .partner-subcontainer {
+    padding: 10px;
+  }
+
+  .partner-subcontainer:last-child div {
+    width: 330px;
+  }
+
+  .resident-section .title-section-container {
+    left: -20px !important;
+  }
+
+  .resident-section div:first-child h1 {
+    white-space: pre-wrap;
+  }
+
+  .resident-cta {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    position: relative;
+    top: -60px;
+  }
+
+  .partners h2 {
+    margin-left: 0;
+  }
+
+  .partners-sub-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .partners-list-part:first-child {
+    margin-left: 0;
+  }
+
+  /* Partners Logo */
+
+  .partners-logo {
+    height: auto;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .partners-logo h2 {
+    margin-left: 0;
+  }
+
+  .partners-logo-subcontainer {
+    flex-direction: column;
+  }
+
+  /* App Numbers */
+
+  .app-numbers {
+    width: 100%;
+    height: auto;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  /* Newsletter */
+
+  .newsletter h1 {
+    margin-left: 0;
+    margin-bottom: 21px;
+  }
+
+  .newsletter-subcontainer {
+    flex-direction: column;
+  }
+
+  .newsletter input {
+    width: 200px;
+    max-width: 100%;
+  }
+
+  .assign {
+    width: 130px;
+    height: 45px;
+
+    margin-left: 15px;
+    padding-left: 15px;
+
+    background: var(--secondary-color);
+    color: var(--inverted-color);
+
+    font-size: 1.687em;
+    font-weight: bold;
+
+    text-align: left;
+  }
+
+  .social-media {
+    margin-top: 30px;
+  }
+
+  .social-media p {
+    display: flex;
+  }
+  .social-media p span {
+    margin-left: 5px;
+  }
+
+  footer {
+    height: auto;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  footer .container div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @keyframes animaMenuMobile {
+    from {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(initial);
+    }
+  }
+}
