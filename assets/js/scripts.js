@@ -82,7 +82,7 @@ $('.menu a').on('click', function() {
 // guardamos todas as distancias de cada secção até ao todo da página e respetivo id
 var alturas = {};
 $('.section').each(function () {
-  alturas[$(this).prop('id')] = $(this).offset().top; // ex: alturas['section_2'] = 600
+  alturas[$(this).prop('id')] = $(this).offset().top - 100; // ex: alturas['section_2'] = 600
 });
 
 
@@ -143,9 +143,11 @@ $(window).on('scroll', function() {
 // Função de modais
 
 let modalId
-$('.news-article a').on('click', function(e) {
+$('a[data-modal]').on('click', function(e) {
   e.preventDefault()
   modalId = e.target.id
+
+  console.log(modalId)
   
   $(`div[data-modal=${modalId}]`).addClass('active')
 });

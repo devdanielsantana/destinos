@@ -242,8 +242,8 @@
   }
 
   .app-on-iphone {
-    top: 295px;
     left: -50px;
+    bottom: 20%;
   }
 
   .app-on-hands .container {
@@ -297,10 +297,14 @@
   }
 
   .title-section-container img {
-    max-width: 150px;
+    max-width: 100px;
   }
 
   /* Prefeituras */
+
+  .prefeituras-section .container {
+    overflow-x: hidden;
+  }
 
   .prefeituras-section .title-section-container {
     left: 0 !important;
@@ -374,7 +378,7 @@
   }
 
   .partner-subcontainer:last-child div {
-    width: 330px;
+    width: 300px;
   }
 
   .resident-section .title-section-container {
@@ -448,7 +452,7 @@
   }
 
   .newsletter input {
-    width: 200px;
+    width: 170px;
     max-width: 100%;
   }
 

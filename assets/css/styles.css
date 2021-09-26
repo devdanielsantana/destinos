@@ -21,6 +21,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul {
@@ -263,11 +264,13 @@ button:hover {
 }
 
 .first-banner-button {
+  display: block !important;
+  width: 240px;
+
   background: var(--tertiary-color);
 
   font-size: 1.625em;
 
-  display: block;
   padding: 10px 30px;
   margin: 40px 0 20px 0;
 
@@ -336,7 +339,7 @@ button:hover {
 
 .app-on-iphone {
   position: absolute;
-  top: 130px;
+  bottom: 25%;
   left: -50px;
 
   display: block;
