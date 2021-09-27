@@ -206,6 +206,14 @@ button:hover {
   color: var(--inverted-color);
 }
 
+.banner-logo-title {
+  text-align: center;
+  margin-top: 15px;
+  font-style: italic;
+
+  font-size: 1.5em;
+}
+
 .banner .container div:first-child {
   flex: 1;
 }
@@ -302,7 +310,7 @@ button:hover {
   padding-left: 40px;
   padding-right: 40px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .articles p {
