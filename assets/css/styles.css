@@ -285,6 +285,7 @@ button:hover {
   border-radius: 10px;
 
   font-style: italic;
+  text-align: center;
 
   color: var(--inverted-color);
 }

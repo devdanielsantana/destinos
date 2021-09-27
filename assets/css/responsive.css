@@ -241,6 +241,11 @@
     align-items: center;
   }
 
+  .how-works h1 {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
   /* App on hands */
 
   .app-on-hands {
@@ -395,7 +400,7 @@
 
   .trade-partner {
     height: auto;
-    padding: 30px 25px 40px;
+    padding: 60px 25px 60px;
   }
 
   .trade-partner .container {
