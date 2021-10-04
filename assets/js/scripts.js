@@ -49,6 +49,7 @@ function initAnimacaoScroll() {
   const windowMetade = window.innerHeight * 0.7;
 
   function animaScroll() {
+
     sections.forEach(section => {
       const sectionTop = section.getBoundingClientRect().top;
       const isSectionVisible = (sectionTop - windowMetade) < 0;
@@ -173,3 +174,9 @@ $('.mobile-icon').on('click', () => {
 $('.menu-mobile a').on('click', () => {
   $('.menu-mobile').toggleClass('active')
 })
+
+
+// Scroll 
+
+
+

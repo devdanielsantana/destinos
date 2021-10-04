@@ -203,6 +203,8 @@ button:hover {
   width: 100%;
   height: 95vh;
 
+  background-attachment: fixed;
+
   color: var(--inverted-color);
 }
 
@@ -470,6 +472,8 @@ button:hover {
   background: url(../imgs/pref-bg.jpg) no-repeat center;
   background-size: cover;
 
+  background-attachment: fixed;
+
   height: 70vh;
   color: var(--inverted-color);
 }
@@ -553,6 +557,7 @@ button:hover {
 }
 
 .more-lang-icon {
+  opacity: 0;
   position: absolute;
   top: -40px;
   right: 100px;
@@ -674,6 +679,8 @@ button:hover {
 .trade-section {
   background: url(../imgs/trade.jpg) no-repeat center;
   background-size: cover;
+
+  background-attachment: fixed;
 
   height: 70vh;
   color: var(--inverted-color);
@@ -808,6 +815,8 @@ button:hover {
 .resident-section {
   background: url(../imgs/resident.jpg) no-repeat center;
   background-size: cover;
+
+  background-attachment: fixed;
 
   height: 70vh;
   color: var(--inverted-color);
@@ -1217,8 +1226,20 @@ footer .container div {
   }
 }
 
-/* monday Form */
+/* more languages / scroll Magic */
 
-.form-wrapper-component {
-  background: none !important;
+@keyframes fromTheRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(initial);
+  }
+}
+
+.section.ativo .more-lang-icon {
+  animation: fromTheRight 1s forwards;
 }
