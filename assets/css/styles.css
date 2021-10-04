@@ -273,7 +273,7 @@ button:hover {
 
 .first-banner-button {
   display: block !important;
-  width: 240px;
+  width: 260px;
 
   background: var(--tertiary-color);
 
@@ -1215,4 +1215,10 @@ footer .container div {
     opacity: 1;
     transform: translateY(initial);
   }
+}
+
+/* monday Form */
+
+.form-wrapper-component {
+  background: none !important;
 }
